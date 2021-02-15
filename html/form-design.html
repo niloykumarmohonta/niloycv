@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form-design</title>
+    <style>
+        input[type=text]
+        {
+            width: 90%;
+            padding: 10px 20px;
+            font-size: 1rem;
+            border: red solid 1px;
+            border-radius: 7px;
+            margin-top: 5px;
+        }
+        label
+        {
+            color: rgb(211, 30, 30);
+            font-size: 1.2rem;
+        }
+        input[type=password]
+        {
+            color: red;
+            border: red solid 2px;
+            border-radius: 8px;
+            padding: 5px 10px;
+        }
+        input[type=search]
+        {
+            width: 80%;
+            border: red solid 1px;
+            border-radius: 25px;
+            margin-top: 5px;
+        }
+        #search
+        {
+            background-image: url(search.png);
+            background-repeat: no-repeat;
+            font-size: 2rem;
+            padding: 10px 60px;
+            background-position: 20px 13px;
+            background-color: rgb(255, 255, 255);
+            width: 100px;
+            transition: width 0.4s ease-in-out ;
+        }
+        #search:focus
+        {
+            background-color: rgb(255, 255, 67);
+            width: 100%;
+        }
+        #text
+        {
+            resize: none;
+            overflow: auto;
+            padding: 10px;
+            border: 3px solid red;
+            border-radius: 10px;
+            background-color: rgb(187, 241, 255);
+            color: rgb(255, 0, 0);
+        }
+        input[type=button]
+        {
+            border: none;
+            background-color: teal;
+            color: white;
+            border-radius: 10px;
+            padding: 5px 10px;
+            cursor: pointer;
+        }
+        select
+        {
+            width: 20%;
+            padding: 10px;
+            border: none;
+            background-color: tomato;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+        <input type="search" name="search" id="search" placeholder="search">
+        <br><br>
+        <label for="fname"> First name</label>
+        <input type="text" name="fname" id="fname" placeholder="first name">
+        <br> <br>
+        <label for="lname"> Last name</label>
+        <input type="text" name="lname" id="lname" placeholder="last name">
+        <br> <br>
+        <label for="password"> Enter Your password</label>
+        <input type="password" name="password" id="password" placeholder="password">
+        <br><br><br>
+        <textarea name="text" id="text" cols="30" rows="10" placeholder="write your comment"></textarea>
+        <br><br>
+        <input type="button" value="submit" id="button">
+        <br> <br>
+        <select name="subject" id="subject">
+            <option value="CSE">CSE</option>
+            <option value="EEE">EEE</option>
+            <option value="Textile">Textile</option>
+            <option value="Mechanical">Mechanical</option>
+            <option value="MBBS">MBBS</option>
+            <option value="SW">SW</option>
+            <option value="Law">Law</option>
+        </select>
+    </form>
+</body>
+</html>

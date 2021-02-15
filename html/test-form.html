@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test-form</title>
+    <style>
+        #fullname1
+        {
+            padding-right: 20px;
+        }
+        #email1
+        {
+            padding-right: 42px;
+        }
+        #password1
+        {
+            padding-right: 20px;
+        }
+        #dob1
+        {
+            padding-right: 4px;
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+        <div>
+            <label for="fullname" id="fullname1"> Fullname:</label>
+            <input required type="text" name="fullname" placeholder="type your full name" id="fullname"> 
+        </div>
+        <br>
+        <div>
+            <label for="email" id="email1"> Email:</label>
+            <input required type="email" name="email" placeholder="type your email" id="email"> 
+        </div>
+        <br>
+        <div>
+            <label for="password" id="password1"> Password:</label>
+            <input required type="password" name="password" placeholder="type your password" id="password"> 
+        </div>
+        <br>
+        <div>
+            <label for="dob" id="dob1">Date of birth</label>
+            <input required type="date" name="dob" placeholder="type your date of birth" id="dob"> 
+        </div>
+        <br>
+        <div>
+            <label for="photo" id="photo">Choose your file</label>
+            <input type="file" name="photo" placeholder="choose file" id="photo"> 
+        </div>
+        <br>
+        <div>
+            <label for="gender" id="cgender">Choose your gender</label>
+            <input type="radio" name="gender" placeholder="choose gender" id="gender" value="male"> Male
+            <input type="radio" name="gender" placeholder="choose gender" id="gender" value="female"> Female
+        </div>
+        <br>
+        <div>
+            <label for="religion" id="creligion">Choose your religion</label>
+            <input checked type="checkbox" name="religion" placeholder="choose religion" id="religion" value="Hindu"> Hindu
+            <input type="checkbox" name="religion" placeholder="choose religion" id="religion" value="Muslim"> Muslim
+            <input type="checkbox" name="religion" placeholder="choose religion" id="religion" value="Buddhist"> Buddhist
+            <input type="checkbox" name="religion" placeholder="choose religion" id="religion" value="Christian"> Christian
+        </div>
+        <br>
+        <div>
+            <select name="depertment" id="depertment">
+                <option selected disabled value="Choose">Depertment</option>
+                <option value="EEE">EEE</option>
+                <option value="CSE">CSE</option>
+                <option value="SW">SW</option>
+                <option value="LAW">LAW</option>
+                <option value="FINANCE">FINANCE</option>
+            </select>
+        </div>
+        <br>
+        <div>
+            <label for="message"> Message</label> <br>
+            <textarea name="textarea" id="textarea" cols="50" rows="10"></textarea>
+        </div>
+        <div>
+            <input type="submit" name="register" id="register" value="register">
+            <input type="reset" name="reset" id="reset" value="clear">
+        </div>
+        
+
+    </form>
+</body>
+</html>
